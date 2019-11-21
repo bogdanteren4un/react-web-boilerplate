@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "outDir": "./build/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@assets/*": ["./assets/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@router/*": ["./src/router/*"],
+      "@services/*": ["./src/services/*"],
+      "@components/*": ["./src/components/*"]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "./types"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}
